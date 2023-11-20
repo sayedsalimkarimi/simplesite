@@ -1,0 +1,122 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    
+  padding: 1rem;
+   
+}
+
+.card{
+    /* width: 450px;
+    height: 350px; */
+    box-shadow: 2px 3px 7px 0px #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.top--section{
+    width: 100%;
+    height: 50%; 
+    padding: 1rem;  
+}
+.top--section h3{
+    margin-bottom: 1.3rem;
+    color: hsla(179, 62%, 43%, 0.781); 
+}
+.top--section h4{
+    margin-bottom: 0.8rem;
+    color: hsl(71,73%,54%);
+}
+.top--section p{
+    color: lightgray;
+    text-align: justify;
+}
+
+
+
+.bottom--section{
+    width: 100%;
+    height: 50%;
+    
+}
+.bottom--section-left{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    background-color: hsl(179,62%,43%);
+}
+.bottom--section-left,.bottom--section-right{
+    color: white;
+   
+}
+.bottom--section-left h4{
+    margin-bottom: 1.3rem ;
+}
+.price{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+.frequency{
+    position: relative;
+    margin-left: 0.5rem;
+    top: -3px;
+    font-size: 0.5rem;
+    opacity: 0.5;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+.bottom--section-left p{
+    font-size: 0.8rem;
+    margin-bottom: 1.3rem;
+}
+.bottom--section-left button{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(71,73%,54%); 
+    color: inherit;
+}
+.bottom--section-left button:hover,.bottom--section-left:focus-within{
+    cursor: pointer;
+    filter: brightness(105%);   
+    transform: scale(1.1);
+}
+
+.bottom--section-right{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    background-color:  hsla(179, 62%, 43%, 0.781);
+    padding: 1rem;
+}
+.bottom--section-right h4{
+    margin-bottom: 1.3rem;
+}
+.bottom--section-right ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.6rem;
+}
+.bottom--section-right li{
+    line-height: 18px;
+}
+
+@media (min-width:450px){
+    .card{
+        width: 450px;
+        height: 350px;
+    }
+    .bottom--section-left,.bottom--section-right{
+        width: 50%;
+    }
+}
